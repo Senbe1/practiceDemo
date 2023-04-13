@@ -1,4 +1,4 @@
-package demo.设计模式.test;
+package demo.设计模式.test.单例模式;
 
 /**
  * @author liangzhijie
