@@ -6,9 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.Callable;
 
 /**
- * @author:: liangzhijie
- * @description:
- * @date: 20230912
+ * @author liangzhijie
+ * @version 20230912
  **/
 @Data
 @Slf4j

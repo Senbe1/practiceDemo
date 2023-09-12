@@ -4,15 +4,13 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Future;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author:: liangzhijie
- * @description:
- * @date: 20230912
+ * @author liangzhijie
+ * @version 1.0
  **/
 @Slf4j
 public class PerfixTest {
@@ -27,7 +25,5 @@ public class PerfixTest {
         } catch (Exception ex) {
             log.error(ex.getMessage());
         }
-
-
     }
 }
