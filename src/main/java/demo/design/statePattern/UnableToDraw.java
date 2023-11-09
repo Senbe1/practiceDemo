@@ -1,6 +1,5 @@
 package demo.design.statePattern;
 
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -10,17 +9,16 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class UnableToDraw extends State {
 
-    private Context context;
+    private final Context context;
 
     public UnableToDraw(Context context) {
         this.context = context;
     }
 
 
-
     @Override
     void handleMoney() {
-        if(context.count>0){
+        if (context.count > 0) {
             log.info("当前可以抽奖，需扣除50积分");
             context.setState(new AbleToDraw(context));
         }

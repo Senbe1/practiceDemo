@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 public class UnAwardState extends State {
 
 
-    private Context context;
+    private final Context context;
 
     public UnAwardState(Context context) {
         this.context = context;

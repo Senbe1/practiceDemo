@@ -34,20 +34,19 @@ public class Context {
     }
 
     public void handleMoney() {
-        if(count>0){
-            log.info("当前还有{}个奖品",count);
+        if (count > 0) {
+            log.info("当前还有{}个奖品", count);
             this.state.handleMoney();
         }
     }
 
-    public int getCount() {
+    public void getCount() {
         int curCount = count;
         count--;
-        return curCount;
     }
 
-    public void awards(){
-        if(this.state.handleResult()){
+    public void awards() {
+        if (this.state.handleResult()) {
             this.state.Awards();
         }
     }
