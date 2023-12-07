@@ -1,6 +1,5 @@
 package demo.design.statePattern;
 
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -10,7 +9,6 @@ import lombok.extern.slf4j.Slf4j;
  * @author liangzhijie
  * @version 1.0
  **/
-@Data
 @Slf4j
 public class Context {
 
@@ -31,6 +29,10 @@ public class Context {
     public Context(int count) {
         this.count = count;
         this.setState(new UnableToDraw(this));
+    }
+
+    void setState(State state) {
+        this.state = state;
     }
 
     public void handleMoney() {
